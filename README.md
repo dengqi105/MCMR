@@ -7,8 +7,7 @@
 ## How to use the code
 ### Requirements\*
 
-* numpy, pandas, scipy
-* scikit-learn
+* numpy, pandas, scipy, scikit-learn
 * [vmdpy](https://pypi.org/project/vmdpy/) (optional) and [ewtpy](https://pypi.org/project/ewtpy/) (optional)
 
 ### Key parameters
@@ -29,7 +28,7 @@ z_score:      the data normalization method.
 
 ### Examples
 
-MCMR incorporates intra-sensor scale-varied  and inter-sensor scale-aligned correlation (inner_features and intra_features in the code). The number of inner_features and intra_features are S\*(K+1)\*(K+1) and (K+1)\*S\*S, respectively. 
+MCMR incorporates intra-sensor scale-varied  and inter-sensor scale-aligned correlation (intra_features and inner_features in the code). The number of inner_features and intra_features are (K+1)\*S\*S and S\*(K+1)\*(K+1), respectively. 
 
 Note that the format of input X should be (Examples, Sensors, Length).  fs (sampling frequency) is a must for "AFD", and kernel_size is indispensable for "Correntropy". 
 
