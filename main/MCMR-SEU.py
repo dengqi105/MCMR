@@ -1,14 +1,8 @@
-# -*- coding:utf-8 -*-
-# @FileName  :SFCE-SEU.py
-# @Time      :2024/3/20/17:34
-# @Author    :dengqi
-
-
 import numpy as np
 import pandas as pd
 import os
 import time
-from Models.SFCE import SFCE
+from Models.MCMR import MCMR
 
 # %% parameters setting
 print("****" * 10, "parameters setting", "****" * 10)
@@ -62,7 +56,7 @@ for i in label:
 all_data = np.row_stack(all_data)
 
 corrs = ["Correntropy", "Euclidean", "Covariance", "Correlation", "Minkowski", "Cosine"]  # correlation methods
-d_methods = ["FDM", "EWT", "VMD"]  # dataset agumentation methods
+d_methods = ["AFD", "EWT", "VMD"]  # dataset agumentation methods
 clf_names = ["RR", "NB", "LR", "LDA", "LSVM", "GMSVM"]  # classifiers
 
 corr = corrs[0]
