@@ -1,7 +1,7 @@
 
 # 
 <div align="center">
-<img src="https://github.com/dengqi105/MCMR/blob/main/main1.png" width="700" />
+<img src="https://github.com/dengqi105/MCMR/blob/main/main.png" width="700" />
 </div>
 The code of paper "Multiscale correntropy matrix representation-based mechanical fault diagnosis under time-varying conditions"
 
