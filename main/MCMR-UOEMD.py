@@ -1,14 +1,8 @@
-# -*- coding:utf-8 -*-
-# @FileName  :SFCE-UOEMD.py
-# @Time      :2024/7/24/19:56
-# @Author    :dengqi
-
-
 import numpy as np
 import os
 from scipy.io import loadmat
 import time
-from Models.SFCE import SFCE
+from Models.MCMR import MCMR
 
 # %% parameters setting
 print("****" * 10, "parameters setting", "****" * 10)
@@ -60,7 +54,7 @@ def get_label(label):
 labels = get_label(label)
 
 corrs = ["Correntropy", "Euclidean", "Covariance", "Correlation", "Minkowski", "Cosine"]  # correlation methods
-d_methods = ["FDM", "EWT", "VMD"]  # dataset agumentation methods
+d_methods = ["AFD", "EWT", "VMD"]  # dataset agumentation methods
 clf_names = ["RR", "NB", "LR", "LDA", "LSVM", "GMSVM"]  # classifiers
 
 corr = corrs[1] # For this dataset,we use Euclidean to avoid tuning kernel_size
