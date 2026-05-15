@@ -11,7 +11,6 @@ The WT dataset in collaboration with Weite Technologies is not available for ope
 | dataset |     number of sensors(S)     	| sample length(L) 	|K| required training sample number for 95% accuracy|  required training sample number for 99% accuracy|
 |:------:	  |:-----------------:|:------------:	| :------------:	| :------------:	| :------------:	|
 |    KAIST        |     4   	| 2700 	|9| 15	| 40	|
-|    WT   	      |     4   	| 6000 	|5| 14	| 35	|
 |    HIT   	      |     6   	| 512 	|7| 6	  | 13	|
 |  MCC5-THU(speed)|     6   	| 2456 	|5| 10	| 33	|
 |  MCC5-THU(load) |     6   	| 1842 	|5| 2   | 30	|
@@ -21,7 +20,6 @@ The WT dataset in collaboration with Weite Technologies is not available for ope
 | dataset 	|     number of sensors(S)     	| sample length(L) 	|K| required training sample number for 95% accuracy|  required training sample number for 99% accuracy|
 |:------:	    |:-----------------:	|:------------:	| :------------:	| :------------:	| :------------:	|
 |    KAIST    |     4   	| 2700 	|9| 1	| 2	|
-|    WT   	  |     4   	| 6000 	|5| 3	| 5	|
 | SEU(gearbox)|     8   	| 512 	|7| 3	| 4	|
 | SEU(bearing)|     8   	| 512 	|7| 2	| 7	|
 |UOEMD(unload)|     5     | 2800 	|5| 2 | 3 |
@@ -40,7 +38,7 @@ fs:           the sampling frequency
 
 K:            the number of FIMFs, 5~9 is suitable for most situations.
 
-d_method:     the data augmentation method. FDM has an excellent performance.
+d_method:      AFD has an excellent performance.
 
 corr:         the correlation measure method. The default is the Correntropy.
 
@@ -53,10 +51,10 @@ z_score:      the data normalization method.
 
 SFCE incorporates intra-sensor scale-varied  and inter-sensor scale-aligned correlation (inner_features and intra_features in the code). The number of inner_features and intra_features are S\*(K+1)\*(K+1) and (K+1)\*S\*S, respectively. 
 
-Note that the format of input X should be (Examples, Sensors, Length).  fs (sampling frequency) is a must for "FDM", and kernel_size is indispensable for "Correntropy". 
+Note that the format of input X should be (Examples, Sensors, Length).  fs (sampling frequency) is a must for "AFD", and kernel_size is indispensable for "Correntropy". 
 
 ```python
-Extractor = SFCE (fs, K,kernel_size=45,d_method="FDM",corr="Correntropy",clf="RR",z_score=True)
+Extractor = SFCE (fs, K,kernel_size=45,d_method="AFD",corr="Correntropy",clf="RR",z_score=True)
 
 features, inner_features, intra_features = Extractor.transform(X)
 ```
@@ -69,4 +67,6 @@ Y_pre = Extractor.fit_predict(X_train, Y_train, X_test)
 
 ```
 
-## Contact
+## Acknowledgement
+Z. Feng, Q. Wu, S. Yang, Temporal local correntropy representation for fault diagnosis of machines, IEEE Trans. Ind. Inform. 19 (12) (2023) 11868-11877.
+Singh, S.D. Joshi, R.K. Patney, K. Saha, The Fourier decomposition method for nonlinear and non-stationary time series analysis, P. Roy. Soc. a-Math. Phy. 473 (2199) (2017).
