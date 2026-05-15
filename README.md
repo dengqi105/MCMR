@@ -11,7 +11,7 @@
 * [vmdpy](https://pypi.org/project/vmdpy/) (optional) and [ewtpy](https://pypi.org/project/ewtpy/) (optional)
 
 ### Key parameters
-It is suitable for vibration, sound, displacement, torque, temperature, and electrical vortex signals.
+Ihe MCMR method is suitable for vibration, sound, displacement, torque, temperature, and electrical vortex signals.
 ```
 fs:           the sampling frequency
 
@@ -28,7 +28,7 @@ z_score:      the data normalization method.
 
 ### Examples
 
-MCMR incorporates intra-sensor scale-varied  and inter-sensor scale-aligned correlation (corresponding to intra_features and inner_features in the code). The number of inner_features and intra_features are (K+1)\*S\*S and S\*(K+1)\*(K+1), respectively. 
+The MCMR incorporates intra-sensor scale-varied  and inter-sensor scale-aligned correlation (corresponding to intra_features and inner_features in the code). The number of inner_features and intra_features are (K+1)\*S\*S and S\*(K+1)\*(K+1), respectively. 
 
 Note that the format of input X should be (Examples, Sensors, Length).  fs (sampling frequency) is a must for "AFD", and kernel_size is indispensable for "Correntropy". 
 
