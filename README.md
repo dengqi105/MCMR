@@ -65,7 +65,7 @@ The WT dataset in collaboration with Weite Technologies is not available for ope
 |UOEMD(unload)|     5     | 2800 	|5| 2 | 3 |
 |UOEMD(load)  |     5     | 2800 	|5| 2 | 3 |
 
-## Cite
+## Citation
 If you find this code helpful, please cite the paper: Deng Q, Jiang W, Zhao G, He X, Wu J. Multiscale correntropy matrix representation-based mechanical fault diagnosis under time-varying conditions. Structural Health Monitoring 2026. https://doi.org/10.1177/14759217261444967.
 
 ## Acknowledgement
