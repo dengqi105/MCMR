@@ -18,7 +18,7 @@ fs:           the sampling frequency
 
 K:            the number of FIMFs, 5~9 is suitable for most situations.
 
-d_method:      AFD has an excellent performance.
+d_method:     AFD has an excellent performance.
 
 corr:         the correlation measure method. The default is the Correntropy.
 
@@ -70,3 +70,7 @@ The WT dataset in collaboration with Weite Technologies is not available for ope
 Z. Feng, Q. Wu, S. Yang, Temporal local correntropy representation for fault diagnosis of machines, IEEE Trans. Ind. Inform. 19 (12) (2023) 11868-11877.
 
 Singh, S.D. Joshi, R.K. Patney, K. Saha, The Fourier decomposition method for nonlinear and non-stationary time series analysis, P. Roy. Soc. a-Math. Phy. 473 (2199) (2017).
+
+## Note
+The released code is an engineering-oriented implementation of MCMR with practical modifications for stability and efficiency, so some details differ slightly from the original formulation.
+
