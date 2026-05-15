@@ -54,7 +54,7 @@ def get_label(label):
 labels = get_label(label)
 
 corrs = ["Correntropy", "Euclidean", "Covariance", "Correlation", "Minkowski", "Cosine"]  # correlation methods
-d_methods = ["AFD", "EWT", "VMD"]  # dataset agumentation methods
+d_methods = ["AFD", "EWT", "VMD"] 
 clf_names = ["RR", "NB", "LR", "LDA", "LSVM", "GMSVM"]  # classifiers
 
 corr = corrs[1] # For this dataset,we use Euclidean to avoid tuning kernel_size
