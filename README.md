@@ -76,3 +76,11 @@ Singh, S.D. Joshi, R.K. Patney, K. Saha, The Fourier decomposition method for no
 ## Note
 The released code is an engineering-oriented implementation of MCMR with practical modifications for stability and efficiency, so some details differ slightly from the original formulation.
 
+The proposed MCMR framework is highly extensible and can be naturally integrated with deep learning architectures. Possible future directions include:
+
+## Future Extensions
+The MCMR is highly extensible and can be naturally integrated with deep learning architectures. Possible future directions include:
+* Modeling SACMs/SVCMs using CNNs or graph neural networks;
+* Combining MCMR with SPD manifold learning methods;
+* Integrating MCMR into multimodal fault diagnosis frameworks;
+
