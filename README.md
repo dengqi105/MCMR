@@ -48,12 +48,12 @@ z_score:      the data normalization method.
 
 ### Examples
 
-SFCE incorporates intra-sensor scale-varied  and inter-sensor scale-aligned correlation (inner_features and intra_features in the code). The number of inner_features and intra_features are S\*(K+1)\*(K+1) and (K+1)\*S\*S, respectively. 
+MCMR incorporates intra-sensor scale-varied  and inter-sensor scale-aligned correlation (inner_features and intra_features in the code). The number of inner_features and intra_features are S\*(K+1)\*(K+1) and (K+1)\*S\*S, respectively. 
 
 Note that the format of input X should be (Examples, Sensors, Length).  fs (sampling frequency) is a must for "AFD", and kernel_size is indispensable for "Correntropy". 
 
 ```python
-Extractor = SFCE (fs, K,kernel_size=45,d_method="AFD",corr="Correntropy",clf="RR",z_score=True)
+Extractor = MCMR (fs, K,kernel_size=45,d_method="AFD",corr="Correntropy",clf="RR",z_score=True)
 
 features, inner_features, intra_features = Extractor.transform(X)
 ```
