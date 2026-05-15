@@ -1,10 +1,9 @@
 
 # 
 <div align="center">
-<img src="https://github.com/dengqi105/SFCE/blob/main/main1.png" width="700" />
+<img src="https://github.com/dengqi105/MCMR/blob/main/main1.png" width="700" />
 </div>
-
-
+The code of paper "Multiscale correntropy matrix representation-based mechanical fault diagnosis under time-varying conditions"
 
 ## Results under time-varying conditions
 The WT dataset in collaboration with Weite Technologies is not available for open source sharing due to confidentiality and proprietary considerations. The [KAIST](https://data.mendeley.com/datasets/vxkj334rzv/7) [HIT](https://github.com/HouLeiHIT/HIT-dataset) [MCC5-THU](https://data.mendeley.com/datasets/p92gj2732w/2) [SEU](https://github.com/cathysiyu/Mechanical-datasets) [UOEMD](https://data.mendeley.com/datasets/msxs4vj48g/1) dataset can be downloaded directly.
@@ -69,6 +68,5 @@ After feature extraction, the result can be predicted using the following code. 
 Y_pre = Extractor.fit_predict(X_train, Y_train, X_test)
 
 ```
-## Status
-The code of model is currently private and will be released after the paper is accepted.
+
 ## Contact
