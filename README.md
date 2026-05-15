@@ -78,7 +78,7 @@ The released code is an engineering-oriented implementation of MCMR with practic
 
 ## Future Extensions
 The MCMR is highly extensible and can be naturally integrated with deep learning architectures. Possible future directions include:
-* Modeling SACMs/SVCMs using CNNs or graph neural networks;
-* Combining MCMR with SPD manifold learning methods;
-* Integrating MCMR into multimodal fault diagnosis frameworks;
+* Modeling SACMs/SVCMs using CNNs or graph neural networks
+* Combining MCMR with SPD manifold learning methods
+* Integrating MCMR into multimodal fault diagnosis frameworks
 
