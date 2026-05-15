@@ -11,7 +11,7 @@
 * [vmdpy](https://pypi.org/project/vmdpy/) (optional) and [ewtpy](https://pypi.org/project/ewtpy/) (optional)
 
 ### Key parameters
-Ihe MCMR method is suitable for vibration, sound, displacement, torque, temperature, and electrical vortex signals.
+The MCMR method is suitable for vibration, sound, displacement, torque, temperature, and electrical vortex signals.
 ```
 fs:           the sampling frequency
 
